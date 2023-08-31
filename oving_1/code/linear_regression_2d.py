@@ -5,7 +5,7 @@ import csv
 x_data = []
 y_data = []
 
-with open('length_weight.csv', 'r') as f:
+with open('../data/length_weight.csv', 'r') as f:
     csv_reader = csv.reader(f)
     next(csv_reader)
     for row in csv_reader:

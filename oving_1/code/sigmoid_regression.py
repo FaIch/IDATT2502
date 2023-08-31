@@ -2,7 +2,7 @@ import torch
 import pandas as pd
 import matplotlib.pyplot as plt
 
-train = pd.read_csv('day_head_circumference.csv', dtype='float')
+train = pd.read_csv('../data/day_head_circumference.csv', dtype='float')
 train_y = train.pop('head circumference')
 
 train_x = torch.tensor(train.to_numpy(), dtype=torch.float)

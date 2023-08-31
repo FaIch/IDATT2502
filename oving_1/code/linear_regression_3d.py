@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
-train = pd.read_csv('day_length_weight.csv', dtype='float')
+train = pd.read_csv('../data/day_length_weight.csv', dtype='float')
 train_y = train.pop('day')
 train_x = torch.tensor(train.to_numpy(), dtype=torch.float).reshape(-1, 2)
 train_y = torch.tensor(train_y.to_numpy(), dtype=torch.float).reshape(-1, 1)
